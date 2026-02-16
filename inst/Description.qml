@@ -4,7 +4,7 @@ import JASP.Module
 Description
 {
 	name		: "jaspModuleTemplate"
-	title		: qsTr("CrossLagged")
+	title		: qsTr("Cross Lagged")
 	description	: qsTr("Examples for module builders")
 	version		: "0.1"
 	author		: "JASP Team"
@@ -24,7 +24,7 @@ Description
 	{
 		title: qsTr("Using the interface") // Title for window
 		menu: qsTr("Using the interface")  // Title for ribbon
-		func: "interfaceExample"           // Function to be called
+		func: "dbgm"           // Function to be called
 		qml: "Interface.qml"               // Design input window
 		requiresData: false                // Allow to run even without data
 	}
