@@ -34,20 +34,20 @@ Form
 
   Text
   {
-      text: qsTr("This analysis shows you different interface elements of JASP")
+      text: qsTr("This analysis allows us to ")
 	  // The qsTr wrapper allows for future translations. As a rule of thumb, you should always use qsTr for any text that will be displayed to the user.
   }
 
 	Group
 	{
-		title: qsTr("Logical controls")
+		title: qsTr("Plots")
 
 		CheckBox
 		{
 			info: qsTr("This is a tick mark that can be used to control the flow of the analysis")
 
-			name: "my_tick_mark"
-			label: qsTr("Tick mark")
+			name: "networkPlot"
+			label: qsTr("Edge evidence plot")
 
 			// We can add some extra control parameters
 			checked: false // Default value
@@ -176,7 +176,7 @@ Form
 
 				// The tic mark below is only available if the above tick mark is checked
 				CheckBox
-				{ 
+				{
 					name: "my_subordinate_tick_mark"
 					label: qsTr("Subordinate tick mark")
 					checked: false // Default value
